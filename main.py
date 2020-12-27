@@ -1,18 +1,13 @@
-secret_word = "cute"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = False
-
-while guess != secret_word and not(out_of_guesses):
-    if guess_count < guess_limit:
-        guess = input("enter your guess: ")
-        guess_count += 1
-    else:
-        out_of_guesses = True
-
-if out_of_guesses == True :
-    print("Sorry next time :) !")
+num1 = float(input("enter first number : "))
+opp = input("enter opertor: ")
+num2 = float(input("enter secnd numbr: "))
+if  opp == "+":
+     print(num1 + num2)
+elif opp == "-":
+     print( num1 - num2)
+elif opp == "*":
+     print( num1 * num2 )
+elif opp == "/":
+     print(num1 / num2)
 else:
-    print("You win!")
-
+     print("invalid")
